@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C635D8AE-2CD6-3AD7-23ED-A3F33B58872E" name="Doctor">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>5B20EE30-27D9-69E1-2169-0CA1F74ECDC9</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="doctor_id" id="D4C24181-F88A-05F1-E441-D08AB2D83A4B">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>591BF573-D72A-F035-DADD-51F7F72FCD22</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doctor_name" id="6667F3ED-C4DC-91BF-9660-FC0BD12A873B">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>FDF60E0E-BC87-3203-58CA-5BA9CEFEC45E</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="52C6C08A-C1EE-446B-35D8-DF27823FABA3">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>9B59B7C2-C3ED-A4FD-ADD9-0D4DEBE7AD1E</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doctor_birth_date" id="58570B83-85EE-383C-5850-648D62105037">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>BC574093-AF50-A181-CADC-1EAB0B2BF591</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="specialization" id="5D49818A-C44C-F99C-BC4A-620C2310F43A">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>B729BF7E-8F3E-6485-F267-78F6D91BE763</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="doctor_address" id="399D93C9-FDC3-1CCB-AEC9-A42B46FF4BF9">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 22:14:18 UTC</createdTime>
+<generatorID>36FBE223-4BE7-0D45-6D1F-9108EBF28BB2</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2E86A50D-805C-D817-123A-D7D501B9D812" name="Doctor_PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>9CF1223E-7684-FF58-0D39-AEB8446BCC8F</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4C24181-F88A-05F1-E441-D08AB2D83A4B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

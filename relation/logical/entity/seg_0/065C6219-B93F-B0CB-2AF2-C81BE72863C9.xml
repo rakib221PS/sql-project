@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="065C6219-B93F-B0CB-2AF2-C81BE72863C9" name="sale">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:15:54 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sale_id" id="CF4A9F88-B146-8ABD-4952-C5C523AAFEC5">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:16:10 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date_transaction" id="4101CC9F-3845-8A26-A1F8-1115A5BBB3DF">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:16:38 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="inventory_id" id="41858696-8D8A-1E98-A280-ED5E5C73B8C4">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:41:45 UTC</createdTime>
+<generatorID>54940D8C-ED1A-3B83-F421-D9BCE3500AF4</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<referedAttribute>C92C49E7-FB98-9D23-44D8-AC743DB1D884</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ph_id" id="9F6EC280-7009-8BF9-8C78-92CDABCF2D1B">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:41:45 UTC</createdTime>
+<generatorID>54940D8C-ED1A-3B83-F421-D9BCE3500AF4</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<referedAttribute>0389702E-8969-D5F7-1C39-A4453625AA01</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="p_id" id="2AE44A13-E7E2-6ECE-F6D8-BF53FD390B63">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:41:45 UTC</createdTime>
+<generatorID>54940D8C-ED1A-3B83-F421-D9BCE3500AF4</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<referedAttribute>2CD78BEB-7B6C-94F6-2F80-648731B85A23</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="quantity_purchase" id="9C7976D2-F74D-507C-ADA8-5E48565425A4">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 22:42:56 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="501D76DB-B745-28C0-9852-4FC13E43B7D4" name="sales PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:16:36 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CF4A9F88-B146-8ABD-4952-C5C523AAFEC5</attributeRef>
+<attributeRef>41858696-8D8A-1E98-A280-ED5E5C73B8C4</attributeRef>
+<attributeRef>9F6EC280-7009-8BF9-8C78-92CDABCF2D1B</attributeRef>
+<attributeRef>2AE44A13-E7E2-6ECE-F6D8-BF53FD390B63</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

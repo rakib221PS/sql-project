@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9F99BBE5-9781-50F2-ECCA-50CCC32EEFD7" name="sale">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>065C6219-B93F-B0CB-2AF2-C81BE72863C9</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sale_id" id="C4E1F8D5-66A9-BC3A-A5C6-2B70EEDA10C1">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>CF4A9F88-B146-8ABD-4952-C5C523AAFEC5</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_transaction" id="722C6F01-18EE-D565-28D6-53CE04052CF9">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>4101CC9F-3845-8A26-A1F8-1115A5BBB3DF</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inventory_inventory_id" id="878D315C-547B-397E-7E86-6E5E861CE02E">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>41858696-8D8A-1E98-A280-ED5E5C73B8C4</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B99AD1E-96AB-858A-5C94-F8C3889B2E10" referredColumn="5AAAEE9A-7369-B941-51E3-8DCD0F440D15"/>
+</associations>
+</Column>
+<Column name="inventory_pharmacy_pharmacy_id" id="82ED4A18-E73B-8CF1-9695-A605D203C335">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>9F6EC280-7009-8BF9-8C78-92CDABCF2D1B</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B99AD1E-96AB-858A-5C94-F8C3889B2E10" referredColumn="B00B8EBD-C109-6602-5597-32B17B307032"/>
+</associations>
+</Column>
+<Column name="inventory_pharmacy_patient_patient_id" id="06680E67-4AF1-34BC-1E35-905E97BB30B6">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>2AE44A13-E7E2-6ECE-F6D8-BF53FD390B63</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B99AD1E-96AB-858A-5C94-F8C3889B2E10" referredColumn="F4575625-2605-15FE-0699-1D5F932B7650"/>
+</associations>
+</Column>
+<Column name="quantity_purchase" id="8B355AA6-0361-AA78-8EF5-CF382EDE6358">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>9C7976D2-F74D-507C-ADA8-5E48565425A4</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C012E7B1-437D-50EE-F913-3318CCD21690" name="sales_PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>501D76DB-B745-28C0-9852-4FC13E43B7D4</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4E1F8D5-66A9-BC3A-A5C6-2B70EEDA10C1"/>
+<colUsage columnID="878D315C-547B-397E-7E86-6E5E861CE02E"/>
+<colUsage columnID="82ED4A18-E73B-8CF1-9695-A605D203C335"/>
+<colUsage columnID="06680E67-4AF1-34BC-1E35-905E97BB30B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F65DF34D-1D84-AF49-F17C-11B19168FF44" name="sale_inventory_FK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>54940D8C-ED1A-3B83-F421-D9BCE3500AF4</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="878D315C-547B-397E-7E86-6E5E861CE02E"/>
+<colUsage columnID="82ED4A18-E73B-8CF1-9695-A605D203C335"/>
+<colUsage columnID="06680E67-4AF1-34BC-1E35-905E97BB30B6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

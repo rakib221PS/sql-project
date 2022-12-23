@@ -1,0 +1,116 @@
+
+CREATE TABLE doctor (
+    doctor_id         NUMBER NOT NULL,
+    doctor_name       VARCHAR2(30) NOT NULL,
+    gender            VARCHAR2(10) NOT NULL,
+    doctor_birth_date DATE NOT NULL,
+    specialization    VARCHAR2(30) NOT NULL,
+    doctor_address    VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE doctor ADD CONSTRAINT doctor_pk PRIMARY KEY ( doctor_id );
+
+CREATE TABLE inventory (
+    inventory_id                NUMBER NOT NULL,
+    inventory_name              VARCHAR2(30) NOT NULL,
+    pharmacy_ph_id              NUMBER NOT NULL,
+    pharmacy_patient_patient_id NUMBER NOT NULL,
+    inventory_price             NUMBER NOT NULL,
+    date_of_last_purchase       DATE NOT NULL,
+    inventory_amount            NUMBER NOT NULL,
+    unfinished_order            NUMBER NOT NULL
+);
+
+ALTER TABLE inventory
+    ADD CONSTRAINT pharmacy_inventory_pk PRIMARY KEY ( inventory_id,
+                                                       pharmacy_ph_id,
+                                                       pharmacy_patient_patient_id );
+
+CREATE TABLE patient (
+    p_id             NUMBER NOT NULL,
+    name             VARCHAR2(30) NOT NULL,
+    birth_date       DATE NOT NULL,
+    gender           VARCHAR2(10) NOT NULL,
+    signup_date      DATE NOT NULL,
+    annual_income    NUMBER(6, 3),
+    doctor_doctor_id NUMBER NOT NULL,
+    patient_address  VARCHAR2(50) NOT NULL
+);
+
+ALTER TABLE patient ADD CONSTRAINT patients_pk PRIMARY KEY ( p_id );
+
+CREATE TABLE patients_history (
+    date_of_visit      DATE NOT NULL,
+    duration           NUMBER NOT NULL,
+    diagnosis          VARCHAR2(30) NOT NULL,
+    prescribed         VARCHAR2(30) NOT NULL,
+    history_id         NUMBER NOT NULL,
+    patient_patient_id NUMBER NOT NULL
+);
+
+ALTER TABLE patients_history ADD CONSTRAINT patients_history_pk PRIMARY KEY ( history_id,
+                                                                              patient_patient_id );
+
+CREATE TABLE pharmacy (
+    ph_id                      NUMBER NOT NULL,
+    telephone_number           NUMBER(14) NOT NULL,
+    name_of_contact_person     VARCHAR2(30) NOT NULL,
+    patient_patient_id         NUMBER NOT NULL,
+    address_address_id         NUMBER NOT NULL,
+    address_patient_patient_id NUMBER NOT NULL,
+    address_doctor_doctor_id   NUMBER NOT NULL,
+    pharmacy_address           VARCHAR2(50) NOT NULL
+);
+
+CREATE UNIQUE INDEX pharmacy__idx ON
+    pharmacy (
+        address_address_id
+    ASC,
+        address_patient_patient_id
+    ASC,
+        address_doctor_doctor_id
+    ASC );
+
+ALTER TABLE pharmacy ADD CONSTRAINT pharmacy_pk PRIMARY KEY ( ph_id,
+                                                              patient_patient_id );
+
+CREATE TABLE sale (
+    sale_id                               NUMBER NOT NULL,
+    date_transaction                      DATE NOT NULL,
+    inventory_inventory_id                NUMBER NOT NULL,
+    inventory_pharmacy_pharmacy_id        NUMBER NOT NULL, 
+    inventory_pharmacy_patient_patient_id NUMBER NOT NULL,
+    quantity_purchase                     NUMBER NOT NULL
+);
+
+ALTER TABLE sale
+    ADD CONSTRAINT sales_pk PRIMARY KEY ( sale_id,
+                                          inventory_inventory_id,
+                                          inventory_pharmacy_pharmacy_id,
+                                          inventory_pharmacy_patient_patient_id );
+
+ALTER TABLE inventory
+    ADD CONSTRAINT inventory_pharmacy_fk FOREIGN KEY ( pharmacy_ph_id,
+                                                       pharmacy_patient_patient_id )
+        REFERENCES pharmacy ( ph_id,
+                              patient_patient_id );
+
+ALTER TABLE patient
+    ADD CONSTRAINT patient_doctor_fk FOREIGN KEY ( doctor_doctor_id )
+        REFERENCES doctor ( doctor_id );
+
+ALTER TABLE patients_history
+    ADD CONSTRAINT patients_history_patient_fk FOREIGN KEY ( patient_patient_id )
+        REFERENCES patient ( p_id );
+
+ALTER TABLE pharmacy
+    ADD CONSTRAINT pharmacy_patient_fk FOREIGN KEY ( patient_patient_id )
+        REFERENCES patient ( p_id );
+
+ALTER TABLE sale
+    ADD CONSTRAINT sale_inventory_fk FOREIGN KEY ( inventory_inventory_id,
+                                                   inventory_pharmacy_pharmacy_id,
+                                                   inventory_pharmacy_patient_patient_id )
+        REFERENCES inventory ( inventory_id,
+                               pharmacy_ph_id,
+                               pharmacy_patient_patient_id );

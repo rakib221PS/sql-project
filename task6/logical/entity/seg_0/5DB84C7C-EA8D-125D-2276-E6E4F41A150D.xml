@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5DB84C7C-EA8D-125D-2276-E6E4F41A150D" name="pharmacy">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:08:52 UTC</createdTime>
+<ownerDesignName>task6</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ph_id" id="B6A0B65F-0E54-D64C-BF4B-1D9ABA1C54A7">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:09:10 UTC</createdTime>
+<ownerDesignName>task6</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="telephone_number" id="279EB323-D930-DA0A-917F-56ACCFF06C62">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:09:25 UTC</createdTime>
+<ownerDesignName>task6</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name_of_contact_person" id="9BD59A3A-2C72-E0DF-77C0-2CDF5E2C80C1">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:10:07 UTC</createdTime>
+<ownerDesignName>task6</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="p_id" id="19AD988D-14A7-F5A5-498B-43A76459EC61">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:41:06 UTC</createdTime>
+<generatorID>4FB0AF66-DD5F-5F07-B185-E0A0F35E9080</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<referedAttribute>3C0F2802-97C6-FFE2-2734-61E95A11C72E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pharmacy_address" id="C55B4C14-EA44-A321-02DC-6657E475202B">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 22:08:18 UTC</createdTime>
+<ownerDesignName>task6</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8862A625-2B80-80AC-9F59-1F2016EC2A9E" name="pharmacy PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:13:13 UTC</createdTime>
+<ownerDesignName>task6</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B6A0B65F-0E54-D64C-BF4B-1D9ABA1C54A7</attributeRef>
+<attributeRef>19AD988D-14A7-F5A5-498B-43A76459EC61</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

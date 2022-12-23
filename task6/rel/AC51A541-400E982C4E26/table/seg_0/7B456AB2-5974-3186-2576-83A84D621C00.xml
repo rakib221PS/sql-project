@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7B456AB2-5974-3186-2576-83A84D621C00" name="patients_history">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>7E5AF46B-5D3F-1661-FAFA-41D3FF93ED8F</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="date_of_visit" id="3806A6B5-6AC1-B579-40A6-425B84A6A4EB">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>2AB0FA60-81B8-76A4-5EB5-246D765ABC1B</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="duration" id="CCCE7E85-B579-6B86-38FE-2F8BCD1F7096">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>054F611F-FF6D-B87C-FD32-6FD7272486C5</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="diagnosis" id="A43C8BA9-44DA-9577-9587-0B9DF5776356">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>C5B077B0-06C7-BB9D-7FB7-14ECEA8CBCF8</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="prescribed" id="EA27FCDB-6E7E-DF48-BECA-C4883F52B940">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>25B61F9E-2E5C-7C8A-31FE-516FF4FBE93F</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="history_id" id="8E74D6E2-6E92-6614-AEE9-E840ECD8BE11">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>C7E7A9FC-90A5-A8CD-57E1-7600C5E2D9C7</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patient_patient_id" id="10700328-974E-F6C4-80E8-655776F62676">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>D72267A2-4E21-B818-EDD1-BBDDA60BC1E7</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="073E6504-E1FD-2ED8-83CD-2D35E0764AB8" referredColumn="A247EB80-042F-D26C-91B9-F00C316036F2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBAD6D10-70B3-8113-C60C-2170760DB6E4" name="patients_history_PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>1010EDF8-7AE9-F8BD-6308-BBBD214AE8BD</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8E74D6E2-6E92-6614-AEE9-E840ECD8BE11"/>
+<colUsage columnID="10700328-974E-F6C4-80E8-655776F62676"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03771030-3F5E-1D62-6BB0-2F55E6810FBD" name="patients_history_patient_FK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>D6EC8AAF-D666-CA52-C5F0-77E08F7AC5CD</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10700328-974E-F6C4-80E8-655776F62676"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

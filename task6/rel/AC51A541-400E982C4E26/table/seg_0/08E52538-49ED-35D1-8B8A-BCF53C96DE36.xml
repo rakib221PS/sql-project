@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="08E52538-49ED-35D1-8B8A-BCF53C96DE36" name="pharmacy">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>5DB84C7C-EA8D-125D-2276-E6E4F41A150D</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ph_id" id="6EEB21B9-DB3C-E064-4D94-F76999BE567F">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>B6A0B65F-0E54-D64C-BF4B-1D9ABA1C54A7</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telephone_number" id="72D32F5C-E32A-4E8A-9AEA-AC098110E9BD">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>279EB323-D930-DA0A-917F-56ACCFF06C62</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name_of_contact_person" id="1E911DE8-E269-A847-ECA1-8FAB79169FA3">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>9BD59A3A-2C72-E0DF-77C0-2CDF5E2C80C1</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="patient_patient_id" id="6A903B04-07F7-B7D8-025B-34667CDDE10F">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>19AD988D-14A7-F5A5-498B-43A76459EC61</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F98EC824-26F5-691E-2DA3-8C7AA372AE1F" referredColumn="A247EB80-042F-D26C-91B9-F00C316036F2"/>
+</associations>
+</Column>
+<Column name="address_address_id" id="3E0548CC-3EC4-2A07-BA45-093E3B12E7DF">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 01:25:56 UTC</createdTime>
+<generatorID>00CA0CEE-865B-E59A-34C6-9E80C7935333</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address_patient_patient_id" id="8C2881C2-B779-E2CE-3A43-2F1CC1054785">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 01:25:56 UTC</createdTime>
+<generatorID>251F546D-DDE4-11B1-DF89-572D5148187C</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address_Doctor_doctor_id" id="F3D6DB02-16EF-2059-4C2E-592B56B1B054">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 01:25:56 UTC</createdTime>
+<generatorID>1409CBA7-6387-49FD-4887-A5CD27A99D5C</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pharmacy_address" id="42897030-880E-0E5E-F6BF-34E6F861798A">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 22:14:18 UTC</createdTime>
+<generatorID>C55B4C14-EA44-A321-02DC-6657E475202B</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="ECBA73F9-E94F-B2A1-6ADC-4690CA49DB3E" name="pharmacy_PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>8862A625-2B80-80AC-9F59-1F2016EC2A9E</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6EEB21B9-DB3C-E064-4D94-F76999BE567F"/>
+<colUsage columnID="6A903B04-07F7-B7D8-025B-34667CDDE10F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70C8BAC8-16E1-CDC8-0745-A446616D524F" name="pharmacy__IDX">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 01:25:56 UTC</createdTime>
+<ownerDesignName>task6</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>F9920F86-AFC5-9821-9C6F-863B65178907</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="3E0548CC-3EC4-2A07-BA45-093E3B12E7DF"/>
+<colUsage columnID="8C2881C2-B779-E2CE-3A43-2F1CC1054785"/>
+<colUsage columnID="F3D6DB02-16EF-2059-4C2E-592B56B1B054"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="51790DCA-BB3D-46BB-D232-4576E92106C9" name="pharmacy_patient_FK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>4FB0AF66-DD5F-5F07-B185-E0A0F35E9080</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6A903B04-07F7-B7D8-025B-34667CDDE10F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

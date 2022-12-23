@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5B20EE30-27D9-69E1-2169-0CA1F74ECDC9" name="Doctor">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:26:56 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="doctor_id" id="591BF573-D72A-F035-DADD-51F7F72FCD22">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:27:03 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="doctor_name" id="FDF60E0E-BC87-3203-58CA-5BA9CEFEC45E">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 22:53:48 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="gender" id="9B59B7C2-C3ED-A4FD-ADD9-0D4DEBE7AD1E">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 22:54:12 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="doctor_birth_date" id="BC574093-AF50-A181-CADC-1EAB0B2BF591">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 22:55:00 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="specialization" id="B729BF7E-8F3E-6485-F267-78F6D91BE763">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 22:55:21 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="doctor_address" id="36FBE223-4BE7-0D45-6D1F-9108EBF28BB2">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-15 22:07:40 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9CF1223E-7684-FF58-0D39-AEB8446BCC8F" name="Doctor PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:27:14 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>591BF573-D72A-F035-DADD-51F7F72FCD22</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

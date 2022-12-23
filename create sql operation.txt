@@ -1,0 +1,148 @@
+-- _________________________________doctor start_________________________________
+
+insert into doctor values(1,'Anna','female','03MAR95','Cardiology','Lodz');
+insert into doctor values(2,'Weronika','female','04JUN92','Dermatology','Warsaw');
+insert into doctor values(3,'Angel','female','01JAN87','Neurology','Dhaka');
+insert into doctor values(5,'Angel','female','01Aug87','Something','London');
+insert into doctor values(7,'Messi','male','01Aug88','Something','Rosario');
+
+insert into patient values(11,'John','04MAR02','male','02MAR22',NULL,2,'Lodz');
+insert into patient values(12,'Monika','02Jun99','female','02JAN22',NULL,1,'Warsaw');
+insert into patient values(17,'Hasan','01MAR02','male','02JUL22',NULL,2,'Lodz');
+insert into patient values(1,'Hasan','01MAR02','male','02JUL22',NULL,2,'Lodz');
+insert into patient values(19,'Rakib','01MAR02','male','02JUL22',NULL,2,'Lodz');
+
+
+
+insert into patients_history values('04MAR02',45,'diag','pes',16,11);
+insert into patients_history values('02Jun99',34,'nosis','scribed',45,12);
+insert into patients_history values('01MAR02',60,'diagnosis','pescribed',87,17);
+insert into patients_history values('02Jun99',34,'sis','scribed',5,19);
+insert into patients_history values('01MAR02',60,'no','pescribed',107,17);
+
+
+
+insert into pharmacy values(34,6789034566,'him',11,1,1,1,'tamka');
+insert into pharmacy values(37,6789034545,'her',17,2,2,2,'centrum');
+insert into pharmacy values(59,6789034566,'she',11,3,3,3,'tamka');
+insert into pharmacy values(33,4566455676,'hhh',19,4,4,4,'Lodz');
+insert into pharmacy values(30,67890345,'sss',17,5,5,5,'baluty');
+
+insert into inventory values(78,'dr',34,11,450,'03JAN22',4567,34);
+insert into inventory values(88,'ug',37,17,40,'03MAR22',467,4);
+insert into inventory values(77,'drug',59,11,50,'03JUN22',567,74);
+insert into inventory values(18,'ug',37,17,40,'03MAR22',467,4);
+insert into inventory values(27,'drug',33,19,50,'03JUN22',567,74);
+
+
+
+insert into sale values(5,'03JAN22',78,34,11,20);
+insert into sale values(6,'03MAR22',88,37,17,40);
+insert into sale values(7,'03JUN22',77,59,11,2);
+insert into sale values(4,'03MAR22',27,33,19,40);
+insert into sale values(8,'03JUN22',18,37,17,2);
+
+
+--1 to 20 operation:
+
+select * from sale;
+
+select name from patient;
+
+select * from patient
+    where doctor_doctor_id > 1;
+
+select sum(inventory_price) from inventory;
+
+select avg(inventory_price) from inventory;
+
+SELECT inventory_name, SUM(unfinished_order)
+  FROM inventory
+       GROUP BY inventory_name
+       HAVING SUM(unfinished_order)>20;
+       
+SELECT inventory_name, inventory_amount FROM inventory
+         ORDER BY inventory_amount desc;
+         
+SELECT inventory_name, inventory_amount FROM inventory
+         ORDER BY  inventory_name DESC, inventory_amount ASC;
+         
+SELECT * FROM doctor
+  WHERE doctor_name LIKE '%nn%';
+  
+SELECT DISTINCT doctor_name FROM doctor;
+
+SELECT doctor_name, specialization FROM doctor, patient
+          WHERE doctor_address = patient_address AND p_id > 12;
+          
+SELECT name, SUM(doctor_doctor_id) AS sum FROM patient
+          WHERE patient_address = 'Lodz'
+          GROUP BY name
+          HAVING SUM(doctor_doctor_id) > 1
+          ORDER BY sum ASC;
+          
+SELECT name, SUM(doctor_doctor_id) AS sum FROM patient
+          WHERE patient_address = 'Lodz'
+          GROUP BY name
+          HAVING SUM(doctor_doctor_id) >= 1
+          ORDER BY sum ASC
+          OFFSET 1 ROWS;
+          
+SELECT name, SUM(doctor_doctor_id) AS sum FROM patient
+          WHERE patient_address = 'Lodz'
+          GROUP BY name
+          HAVING SUM(doctor_doctor_id) >= 1
+          ORDER BY sum ASC
+          OFFSET 1 ROWS
+          FETCH NEXT 1 ROWS ONLY;
+          
+SELECT DISTINCT p.name, p.gender, p.doctor_doctor_id FROM patient p, doctor d
+          WHERE p.gender = d.gender;
+          
+SELECT doctor_id, doctor_name, name, patient_address FROM patient
+          INNER JOIN doctor
+          ON p_id = doctor_id;
+          
+SELECT name, patient_address, doctor_name FROM doctor
+          RIGHT JOIN patient
+          ON doctor_id = p_id;
+          
+SELECT name, patient_address, doctor_name FROM doctor
+          LEFT JOIN patient
+          ON doctor_id = p_id;
+          
+SELECT name, patient_address, doctor_name FROM doctor
+          FULL JOIN patient
+          ON doctor_id = p_id;
+          
+SELECT doctor_name, name FROM doctor
+          CROSS JOIN patient;
+          
+SELECT a.doctor_id, a.doctor_name, b.doctor_name, b.doctor_id
+          FROM doctor a, doctor b
+          WHERE a.doctor_id < b.doctor_id;
+          
+SELECT *
+          FROM doctor
+          NATURAL JOIN patient;
+          
+SELECT doctor_name, doctor_id, specialization FROM doctor
+          WHERE doctor_id IN
+          (SELECT doctor_doctor_id FROM patient WHERE patient_address = 'Warsaw');
+          
+SELECT * FROM doctor
+          WHERE doctor_address IN
+          ('Lodz','Dhaka');
+          
+SELECT * FROM doctor
+          WHERE doctor_address NOT IN
+          ('Lodz','Dhaka');
+          
+SELECT doctor_name, doctor_address FROM doctor
+          WHERE EXISTS
+          (SELECT p_id FROM patient 
+          WHERE p_id = doctor_id);
+          
+SELECT doctor_id, doctor_name FROM doctor
+          WHERE doctor_id != ALL (SELECT doctor_doctor_id FROM patient
+          WHERE gender = 'female' OR patient_address = 'Warsaw');

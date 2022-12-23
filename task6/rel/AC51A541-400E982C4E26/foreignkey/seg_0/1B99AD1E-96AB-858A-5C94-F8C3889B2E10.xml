@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1B99AD1E-96AB-858A-5C94-F8C3889B2E10" containerWithKeyObject="9F99BBE5-9781-50F2-ECCA-50CCC32EEFD7" localFKIndex="F65DF34D-1D84-AF49-F17C-11B19168FF44" name="sale_inventory_FK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>54940D8C-ED1A-3B83-F421-D9BCE3500AF4</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<referredTableLongName>inventory</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4D96D3AD-D5E4-1429-4732-7C0195554E8E</referredTableID>
+<keyObject>4D6567FA-D087-7FAC-DDAF-6C2168929A3F</keyObject>
+<referredKeyID>4D6567FA-D087-7FAC-DDAF-6C2168929A3F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>inventory_id,pharmacy_pharmacy_id,pharmacy_patient_patient_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4D96D3AD-D5E4-1429-4732-7C0195554E8E" name="inventory">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>13723A4A-07DF-2442-CCC2-94CD02FED7F8</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="inventory_id" id="5AAAEE9A-7369-B941-51E3-8DCD0F440D15">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>C92C49E7-FB98-9D23-44D8-AC743DB1D884</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inventory_name" id="AEBD8420-3AAE-72BA-D996-16204B91D921">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>D59C7F66-9E01-79C1-E2A0-5F143F93CAF2</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pharmacy_ph_id" id="B00B8EBD-C109-6602-5597-32B17B307032">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>0389702E-8969-D5F7-1C39-A4453625AA01</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13927723-2234-04D4-5A93-176A0AD634CF" referredColumn="6EEB21B9-DB3C-E064-4D94-F76999BE567F"/>
+</associations>
+</Column>
+<Column name="pharmacy_patient_patient_id" id="F4575625-2605-15FE-0699-1D5F932B7650">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>2CD78BEB-7B6C-94F6-2F80-648731B85A23</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="13927723-2234-04D4-5A93-176A0AD634CF" referredColumn="6A903B04-07F7-B7D8-025B-34667CDDE10F"/>
+</associations>
+</Column>
+<Column name="inventory_price" id="F4556BBA-72F9-F34C-B387-67D0C1E1F333">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>B050658E-0DA3-D587-7723-2482B2CAE532</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="date_of_last_purchase" id="A2114A27-E691-9DDD-5172-2EB9C2D17136">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>8E80E10D-6E25-5718-C60C-0C3A63CECD61</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="inventory_amount" id="52220BE9-3AF1-5EF1-760D-DAD2CC40099B">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>3D8D49D8-E301-1A52-12ED-FCD9E9F2B203</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unfinished_order" id="89CEDAD6-C5A9-8395-6C59-D57E42B84609">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>42DAAF61-D7E4-1E55-D9A0-37076D23C69A</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4D6567FA-D087-7FAC-DDAF-6C2168929A3F" name="pharmacy_inventory_PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>C01A6F0A-16FB-45A2-ECBA-F56758E3BE77</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AAAEE9A-7369-B941-51E3-8DCD0F440D15"/>
+<colUsage columnID="B00B8EBD-C109-6602-5597-32B17B307032"/>
+<colUsage columnID="F4575625-2605-15FE-0699-1D5F932B7650"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="250D2085-0C08-8A39-7AC5-E30DAA7F6C6B" name="inventory_pharmacy_FK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 23:14:17 UTC</createdTime>
+<generatorID>6EE124F7-0ED8-7F58-749B-85F4D18D29F2</generatorID>
+<ownerDesignName>task6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B00B8EBD-C109-6602-5597-32B17B307032"/>
+<colUsage columnID="F4575625-2605-15FE-0699-1D5F932B7650"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

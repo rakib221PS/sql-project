@@ -1,0 +1,111 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7E5AF46B-5D3F-1661-FAFA-41D3FF93ED8F" name="patients_history">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:04:07 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="date_of_visit" id="2AB0FA60-81B8-76A4-5EB5-246D765ABC1B">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:04:17 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="duration" id="054F611F-FF6D-B87C-FD32-6FD7272486C5">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:04:45 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="diagnosis" id="C5B077B0-06C7-BB9D-7FB7-14ECEA8CBCF8">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:07:45 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prescribed" id="25B61F9E-2E5C-7C8A-31FE-516FF4FBE93F">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:07:55 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="history_id" id="C7E7A9FC-90A5-A8CD-57E1-7600C5E2D9C7">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:33:54 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="p_id" id="D72267A2-4E21-B818-EDD1-BBDDA60BC1E7">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:35:48 UTC</createdTime>
+<generatorID>D6EC8AAF-D666-CA52-C5F0-77E08F7AC5CD</generatorID>
+<ownerDesignName>relation</ownerDesignName>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="true"/>
+</engineerTo>
+<referedAttribute>3C0F2802-97C6-FFE2-2734-61E95A11C72E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="1010EDF8-7AE9-F8BD-6308-BBBD214AE8BD" name="patients_history PK">
+<createdBy>redco</createdBy>
+<createdTime>2022-12-14 14:34:34 UTC</createdTime>
+<ownerDesignName>relation</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="AC51A541-F529-1D19-C402-400E982C4E26" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7E7A9FC-90A5-A8CD-57E1-7600C5E2D9C7</attributeRef>
+<attributeRef>D72267A2-4E21-B818-EDD1-BBDDA60BC1E7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
